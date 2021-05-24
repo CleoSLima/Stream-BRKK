@@ -1,0 +1,106 @@
+/* Author: Cleok3 */
+/* Year: 2020 */
+
+@import url(https://fonts.googleapis.com/css?family=Orbitron&display=swap);
+
+{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+body {
+    background: #000000;
+    color: #FAFAFA;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.6);
+    }
+    
+    html, body {
+    height: 100%;
+    overflow: hidden;
+    }
+    
+    #log {
+    font: 600 22px "Orbitron";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px 15px;
+    padding-top: 100px;
+    }
+    
+    #log>div {
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom right, rgba(26, 1, 2, 1), rgba(0, 0, 0, 1));
+    padding: 15px 15px 0;
+    animation: flipInX 500ms ease, fadeOutUp 1s ease 15000ms forwards;
+    -webkit-animation: flipInX 500ms ease, fadeOutUp 1s ease 15000ms forwards;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border: 2px solid red;
+    }
+    
+    #log>div.deleted {
+    visibility: hidden;
+    }
+    
+    .meta {
+      display: block;
+      line-height: 1.5em;
+      background-color: red;
+      text-align:center;
+      padding: 0 8%;
+      position: fixed;
+      top: -4vh;
+      border-radius: 3px;
+    }
+    
+    .message {
+    word-wrap: break-word;
+    line-height: 160%;
+    text-transform: uppercase;
+    padding-top: 5%;
+    }
+    
+    .name {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    }
+    
+    .colon {
+    display: none;
+    }
+    
+    .badge {
+    height: .6em;
+    }
+    
+    #log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.1em;
+    background-size: contain;
+    }
+    
+    #log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+    vertical-align: top;
+    }
+
+
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
